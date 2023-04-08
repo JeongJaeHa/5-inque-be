@@ -12,7 +12,25 @@ const getList = async () => {
     return getList
 }
 
+const deleteList = async (clearList) => {
+    try {
+            for(let i=0; i<clearList.length; i++) {
+                let clearId = clearList[i];
+                await dao.checkList(clearId);
+            }
+            return success;
+            
+        } catch (e) {
+            console.log(e)
+        }
+
+
+    
+    return deleteList
+}
+
 module.exports = {
     contact,
-    getList
+    getList,
+    deleteList
 }

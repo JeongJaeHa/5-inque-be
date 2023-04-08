@@ -12,7 +12,14 @@ const getList = async (req, res) => {
     res.status(200).json({ list : getList })
 }
 
+const deleteList = async (req, res) => {
+    const clearList = req.body.clearList
+    await service.deleteList(clearList)
+    res.status(204).json({ message: "success" })
+}
+
 module.exports = {
     contact,
-    getList
+    getList,
+    deleteList
 }
