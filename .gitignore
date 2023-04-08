@@ -1,0 +1,7 @@
+node_modules
+db/schema.sql
+.DS_Store
+.vscode
+.env.test
+.env
+.dockerignore
