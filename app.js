@@ -6,7 +6,10 @@ const routes = require("./src/routes");
 
 const createApp = () => {
     const app = express();
-    app.use(cors());
+    app.use(express.static('public'));
+    app.use(cors({
+        origin: '*',
+    }));
     app.use(morgan('dev'));
     app.use(express.json());
     app.use(routes);

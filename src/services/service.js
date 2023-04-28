@@ -18,7 +18,7 @@ const deleteList = async (clearList) => {
                 let clearId = clearList[i];
                 await dao.checkList(clearId);
             }
-            return success;
+            return true;
             
         } catch (e) {
             console.log(e)
