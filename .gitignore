@@ -2,8 +2,8 @@ node_modules
 db/schema.sql
 .DS_Store
 .vscode
-.env.test
 .env
+.env.test
 .dockerignore
 certificate_chain.crt
 certificate.pem
@@ -11,3 +11,4 @@ private_key.key
 rootca.crt
 rootca.csr
 rootca.key
+ormconfig.json

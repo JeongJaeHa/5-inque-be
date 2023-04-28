@@ -1,8 +1,8 @@
 const request = require("supertest");
 const { createApp } = require("../../app");
-const { database } = require("../models/datasource");
+// const { database } = require("../models/datasource");
 
-describe("/category/main", () => {
+describe("Test", () => {
   let app;
 
   beforeAll(async () => {
