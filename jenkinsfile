@@ -25,6 +25,13 @@ pipeline {
                 git url : "${GIT_URL}", branch : "main", poll: true, changelog: true
             }
         }
+        stage('test') {
+          steps {
+            sh 'npm install --legacy-deps'
+            sh 'npm start'
+            sh 'npm test'
+          }
+        }
         stage('build') {
             steps {
                 script {
