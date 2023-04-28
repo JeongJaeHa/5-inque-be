@@ -1,4 +1,4 @@
-const { AppDataSource } = require("./datasource");
+const { AppDataSource, AppDataSourceRead } = require("./datasource");
 
 const contact = async (info) => {
     return await AppDataSource.query(
@@ -12,7 +12,7 @@ const contact = async (info) => {
 const getList = async () => {
     return await AppDataSource.query(
         `
-        SELECT * FROM contacts WHERE status = 1
+        SELECT * FROM contacts WHERE status = 1 ORDER BY created_at DESC
         `
     )
 }

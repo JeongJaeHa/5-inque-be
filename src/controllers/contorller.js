@@ -18,8 +18,13 @@ const deleteList = async (req, res) => {
     res.status(204).json({ message: "success" })
 }
 
+const health = async (req, res) => {
+    res.status(200).json({ message: "server healthy" })
+}
+
 module.exports = {
     contact,
     getList,
-    deleteList
+    deleteList,
+    health
 }

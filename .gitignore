@@ -5,3 +5,9 @@ db/schema.sql
 .env.test
 .env
 .dockerignore
+certificate_chain.crt
+certificate.pem
+private_key.key
+rootca.crt
+rootca.csr
+rootca.key
