@@ -14,11 +14,11 @@ pipeline {
         stage('start') {
             steps {
                 echo "start jenkins file test"
-                slackSend (
-                    channel: '#management-service-for-start-up', 
-                    color: '#33FF33', 
-                    message: "STARTED: 5inque web page jenkins-pipeline started"
-                )
+                // slackSend (
+                //     channel: '#management-service-for-start-up', 
+                //     color: '#33FF33', 
+                //     message: "STARTED: 5inque web page jenkins-pipeline started"
+                // )
             }
         }
         stage('pull') {
