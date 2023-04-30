@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "jest --setupFiles=dotenv/config"
+    "test": "DOTENV_CONFIG_PATH=.env.test jest --setupFiles=dotenv/config"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/JeongJaeHa/wanted-pre-onboarding#readme",
   "devDependencies": {
-    "supertest": "^6.2.4"
+    "supertest": "^6.3.3"
   }
 }

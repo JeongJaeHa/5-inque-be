@@ -1,4 +1,4 @@
-const { AppDataSource, AppDataSourceRead } = require("./datasource");
+const { AppDataSource } = require("./datasource");
 
 const contact = async (info) => {
     return await AppDataSource.query(
