@@ -29,8 +29,6 @@ pipeline {
         stage('test') {
 
           steps {
-            sh 'npm i --legacy-peer-deps'
-            sh 'npm install --save typeorm mysql'
             sh 'npm test'
           }
         }
