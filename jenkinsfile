@@ -17,7 +17,7 @@ pipeline {
                 // slackSend (
                 //     channel: '#management-service-for-start-up', 
                 //     color: '#33FF33', 
-                //     message: "STARTED: 5inque web page jenkins-pipeline started"
+                //     message: "STARTED: 5inque was jenkins-pipeline started"
                 // )
             }
         }
@@ -38,7 +38,7 @@ pipeline {
             // slackSend (
             //     channel: '#management-service-for-start-up', 
             //     color: '#33FF33', 
-            //     message: "SUCCESS: dockerimage:${BUILD_NUMBER}"
+            //     message: "SUCCESS: test success"
             // )
             echo 'test success'
         }
@@ -46,7 +46,7 @@ pipeline {
             // slackSend (
             //     channel: '#management-service-for-start-up', 
             //     color: '#FF0000', 
-            //     message: "FAIL: dockerimage:${BUILD_NUMBER}"
+            //     message: "FAIL: test fail"
             // )
             echo 'test fail'
         }
