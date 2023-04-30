@@ -13,12 +13,12 @@ pipeline {
     stages {
         stage('start') {
             steps {
-                echo "start jenkins file test"
-                // slackSend (
-                //     channel: '#management-service-for-start-up', 
-                //     color: '#33FF33', 
-                //     message: "STARTED: 5inque was jenkins-pipeline started"
-                // )
+                echo "start was pipeline"
+                slackSend (
+                    channel: '#management-service-for-start-up', 
+                    color: '#33FF33', 
+                    message: "STARTED: 5inque WAS jenkins-pipeline started"
+                )
             }
         }
         stage('pull') {
@@ -35,19 +35,19 @@ pipeline {
     }
     post {
         success {
-            // slackSend (
-            //     channel: '#management-service-for-start-up', 
-            //     color: '#33FF33', 
-            //     message: "SUCCESS: test success"
-            // )
+            slackSend (
+                channel: '#management-service-for-start-up', 
+                color: '#33FF33', 
+                message: "SUCCESS: WAS test success"
+            )
             echo 'test success'
         }
         failure {
-            // slackSend (
-            //     channel: '#management-service-for-start-up', 
-            //     color: '#FF0000', 
-            //     message: "FAIL: test fail"
-            // )
+            slackSend (
+                channel: '#management-service-for-start-up', 
+                color: '#FF0000', 
+                message: "FAIL: WAS test fail"
+            )
             echo 'test fail'
         }
     }
